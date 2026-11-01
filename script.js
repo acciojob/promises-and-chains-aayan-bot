@@ -20,7 +20,7 @@ document.getElementById("btn").addEventListener("click",()=>{
        })
        promise1.then(()=>{
         console.log("hi")
-         alert(`Welcome ${name.value},.You can vote.`)
+         alert(`Welcome ${name.value}.You can vote.`)
        }).catch(()=>{
         alert("oh sorry "+name.value+". You aren't old enough.")
        })
