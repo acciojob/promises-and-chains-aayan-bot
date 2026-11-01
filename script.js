@@ -5,22 +5,24 @@ let name=document.getElementById("name")
 document.getElementById("btn").addEventListener("click",()=>{
    if(age.value.length===0 || name.value.length===0){
     alert("Please enter valid details")
+    return;
    }
   
        let promise1=new Promise((res,rej)=>{
         setTimeout(()=>{
         if (age.value>=18){
-          res(alert(`Welcome ${name.value},.You can vote.`))
+          res()
         }
         else{
-            rej(alert("oh sorry "+name.value+". You aren't old enough."))
+            rej()
         }
         },4000)
        })
        promise1.then(()=>{
-    console.log("fulfilled")
+        console.log("hi")
+         alert(`Welcome ${name.value},.You can vote.`)
        }).catch(()=>{
-        console.log("reject")
+        alert("oh sorry "+name.value+". You aren't old enough.")
        })
 
    
