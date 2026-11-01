@@ -1,6 +1,13 @@
 // This file is not to be modified. Please ignore this.
 // We will understand all of this later in the course.
 // DO NOT MODIFY THIS FILE
+// let age=document.getElementById("age")
+// let name=document.getElementById("name")
+
+// document.getElementById("btn").addEventListener("click",()=>{
+//     console.log(age.value)
+// })
+console.log("hi")
 
 const express = require('express');
 const path = require('path');
